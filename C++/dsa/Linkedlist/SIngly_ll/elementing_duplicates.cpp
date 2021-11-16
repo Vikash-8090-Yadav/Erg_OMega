@@ -15,7 +15,7 @@ node*takeinput(){
 	int data;
 	cin>>data;
 	node*head = NULL;
-	while(data!=-1){
+	while(data!=-1){   
 		node*newnode = new node(data);
 		if(head==NULL){
 			head = newnode;
