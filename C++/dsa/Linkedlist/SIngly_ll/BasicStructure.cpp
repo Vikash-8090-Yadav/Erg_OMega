@@ -17,7 +17,7 @@ void print(node*head){
 		temp = temp->next;
 
 	}
-}
+	}
 
 int main(){
 	//statically
