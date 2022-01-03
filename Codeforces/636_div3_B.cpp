@@ -74,60 +74,35 @@
   // vector<int> b1;
   // vector<int> b2;
   // void chk_even_odd(){
-  // 	for(int i =1;i<=100;++i){
-  // 		if(i%2==0) b1.push_back(i);
-  // 	}
-  // 	for(int i = 1; i<=1000;++i){
-  // 		if(i%2) b2.push_back(i);
-  // 	}
+  //  for(int i =1;i<=100;++i){
+  //    if(i%2==0) b1.push_back(i);
+  //  }
+  //  for(int i = 1; i<=1000;++i){
+  //    if(i%2) b2.push_back(i);
+  //  }
   // }
 
   void solve(){
-  	vector<int> v1,v2,b1,b2;
-  	int sum_odd=0,sum_even=0;
-  	int n;cin>>n;
-  	int len1 = n/2;
-  	for(int i = 1;i<=n*n;++i){
-  		if(i%2==0) b1.push_back(i);
-  	}
-  	for(int i = 1;i<=n*n;++i){
-  		if(i%2) b2.push_back(i);
-  	}
-  	if(n%4){
-  		cout<<"NO";
-  		return;
-  	}
-  	for(int i = 0;i<len1;++i){
-  		v1.push_back(b1[i]);
-  	}
-  	for(int i = 0; i<len1-1;++i){
-  		v2.push_back(b2[i]);
-  	}
-  	for(auto x : v1){
-  		// trace(x);
-  		sum_even+=x;
-  	}
-  	for(auto x : v2){
-  		// trace(x);
-  		v1.push_back(x);
-  		sum_odd+=x;
-  	}
-  	int diff_final = abs(sum_odd - sum_even);
-  	// if(b2)
-  	if(diff_final%2==0){
-  		cout<<"NO";
-  		return;
-  	}
-  	cout<<"YES"<<endl;
-  	v1.push_back(diff_final);
-  	for(auto x : v1){
-  		cout<<x<<" ";
-  	}
-
-
-  	// vector<bool> b1;
-  	// vector<bool>b2;
-  	// for(int i )
+    int n;cin>>n;
+    int even_sum=0,odd_sum=0;
+    vector<int>v1;
+    if(n%4){
+      cout<<"NO";
+      return;
+    }
+    for(int i = 2 ;i<=n;i+=2){
+      v1.push_back(i);
+      even_sum =even_sum+i;
+    }
+    for(int i = 1;i<n-2;i+=2){
+      odd_sum=odd_sum+i;
+      v1.push_back(i);
+    }
+    cout<<"YES"<<endl;
+    v1.push_back(even_sum-odd_sum);
+    for(auto x : v1){
+      cout<<x<<" ";
+    }
   }
   int32_t main(){
     init();
