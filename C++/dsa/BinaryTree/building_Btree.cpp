@@ -15,6 +15,7 @@
 #include <iostream> // for I/O function
 
 class node{
+public:
 	int data;    		// contains value/key  of the node 
 	node * left;  		// contains the left node of the tree
 	node * right; 		// contains the left node of the tree
