@@ -3,8 +3,8 @@ using namespace std;
 bool containsNearbyDuplicate(vector<int>& nums, int k){
 	vector<pair<int,int>> p;
 	map<int,int>m;
-	for(int i = 0;i<nums.size();++i){		p.push_back({nums[i],i});
-
+	for(int i = 0;i<nums.size();++i){
+		p.push_back({nums[i],i});
 	}
 	sort(p.begin(),p.end());
 	for(int i = 0;i<nums.size()-1;++i){
