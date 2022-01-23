@@ -1,5 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+* author :created by vikash 
+* time :22:59pm
+* date : 23-01-22
+*/
+
 
 vector<int> arrayRankTransform(vector<int>& arr){
 	set<int> s;
