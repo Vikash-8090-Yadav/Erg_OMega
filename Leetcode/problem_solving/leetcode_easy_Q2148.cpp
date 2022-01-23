@@ -24,4 +24,4 @@ int countElements(vector<int>& nums){
 int main(){
 	vector<int> v1 ={-65,-65,50,-65,50,-55,-65,-65};
 	cout<<countElements(v1);
-}
+}	
