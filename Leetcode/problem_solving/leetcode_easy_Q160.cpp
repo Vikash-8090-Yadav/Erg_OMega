@@ -1,3 +1,12 @@
+/*
+ * Created by:Vikash kumar yadav 
+ * Time , date : 01:23 , 6-02-22
+ * day : monday
+ * topic : leetcode/ intersection of the two linked list
+ *
+ */
+
+
 #include <bits/stdc++.h>
 using namespace std;
 class node{
