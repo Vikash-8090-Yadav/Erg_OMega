@@ -29,7 +29,7 @@ node *takeinput(){
 		}
 		cin>>data;
 	}
-	return head;
+return head;
 }
 void print(node*head){
 	node*temp = head;
