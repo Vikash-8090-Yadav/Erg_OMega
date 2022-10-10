@@ -41,7 +41,31 @@ bool susbet_memo(vector<int> nums , int target , int ind , vector<vector<int>> d
 }
 
 
-//  Tabulation 
+//  Tabulation
+
+bool subseet_tablua(vector<int> nums, int target){
+
+  vector<vector<int>> dp(nums.size(),vector<int>(target+1,0));
+
+  for(int i = 0 ; i<nums.size();++i){
+    dp[i][0]=true;
+  }
+  dp[0][nums[0]]  = true;
+  for(int i = 1; i<nums.size();++i){
+    for(int j=1;j<=target;++j){
+      bool ntake = dp[i-1][j];
+      bool take = false;
+      if(nums[j]<=target){
+        take = dp[i-1][j-nums[i]];
+      }
+      dp[i][j] = take|ntake;
+    }
+  }
+  return dp[nums.size()-2][target];
+  // return true;
+}
+
+
 
 
 int main(){
@@ -52,4 +76,8 @@ int main(){
   vector<vector<int>> dp(nums.size(),vector<int>(k+1,-1));
   cout<<endl;
   cout<<susbet_memo(nums,k,3,dp);
+
+  cout<<endl;
+
+  cout<<subseet_tablua(nums,k);
 }
