@@ -47,21 +47,21 @@ int subset_k_Memo(vector<int> nums , int  target,int ind,vector<vector<int>> dp)
 // Tabulation
 
 
-int subse_tabulation(vector<int> nums , int  target,int ind){
+int subse_tabulation(vector<int> nums , int  target){
 
   vector<vector<int>> dp(nums.size(),vector<int>(target+1,0));
 
   for(int i = 0;i<nums.size();++i){
     dp[i][0]=1;
   }
-  dp[0][nums[0]] = 1;
+  if(nums[0]<=target)dp[0][nums[0]] = 1;
 
-  for(int i = 0;i<nums.size();++i){
+  for(int i = 1;i<nums.size();++i){
     for(int new_target = 1;new_target<=target;++new_target){
-      int ntake = dp[i][new_target];
+      int ntake = dp[i-1][new_target];
       int take = 0;
-      if(nums[ind]<=new_target){
-        take = dp[i][new_target-nums[i]];
+      if(nums[i]<=new_target){
+        take = dp[i-1][new_target-nums[i]];
       }
       dp[i][new_target] = take+ntake;
     }
@@ -83,5 +83,5 @@ int main(){
   cout<<subset_k_Memo(nums,target,4,dp);
 
   cout<<endl;
-  cout<<subse_tabulation(nums,target,4);
+  cout<<subse_tabulation(nums,target);
 }
