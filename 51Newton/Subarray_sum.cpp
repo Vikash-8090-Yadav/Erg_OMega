@@ -15,8 +15,7 @@ int main(){
   //
   // for(int i =0;i<n;++i){
   //   int x;cin>>x;
-  //   arr.push_back(x);
-  // }
+  //   arr.push_back(x);  // }
   // if(n==1){
   //   cout<<arr[0]*arr[0];
   // }

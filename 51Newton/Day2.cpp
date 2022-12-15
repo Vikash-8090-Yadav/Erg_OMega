@@ -8,11 +8,11 @@ string sol(string s){
     month.push_back(s[len-4]);
     date.push_back(s[len-2]);
     date.push_back(s[len-1]);
-    
+
     int Origanl_Date = stoi(date);
     int Origanl_Month = stoi(month);
 
-    cout<<Origanl_Date<<" "<<Origanl_Month<<endl;
+    
 
     if(Origanl_Month>9){
       return "After";
