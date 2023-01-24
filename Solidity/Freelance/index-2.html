@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Chickly</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.mina72f.css?_v=20230121230648">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/app.mina72f.js?_v=20230121230648" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<a href="index-2.html" class="header__logo"><img src="img/logo.svg" alt='logo'></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="index-2.html" class="menu__link"><span id="headerHome">Home </span><span class="_icon-arrow-bottom"></span></a>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<button id="headerAbout" data-goto-header data-goto=".about" type="button" class="menu__sub-link">About</button>
+										</li>
+										<li class="menu__sub-item">
+											<button id="headerNft" data-goto-header data-goto=".nft-chicks" type="button" class="menu__sub-link">NFT</button>
+										</li>
+										<li class="menu__sub-item">
+											<button id="headerCondition" data-goto-header data-goto=".conditions" type="button" class="menu__sub-link">Investment
+												Conditions</button>
+										</li>
+										<li class="menu__sub-item">
+											<button id="headerHowWork" data-goto-header data-goto=".how-it-work" type="button" class="menu__sub-link">How it works</button>
+										</li>
+										<li class="menu__sub-item">
+											<button id="headerReferral" data-goto-header data-goto=".referral-program" type="button" class="menu__sub-link">Referral
+												program</button>
+										</li>
+										<li class="menu__sub-item">
+										</li>
+										<li class="menu__sub-item">
+										</li>
+										<li class="menu__sub-item">
+											<button id="headerNewChickens" data-goto-header data-goto=".replenishment" type="button" class="menu__sub-link">New chickens</button>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item"><a id="headerScheme" href="interest-scheme.html" class="menu__link">Interest scheme</a></li>
+								<li class="menu__item"><a id="headerFaq" href="faq.html" class="menu__link">FAQ</a></li>
+							</ul>
+							<div id="cabinet_button" style="display: none">
+								<a href="cabinet.html" class="menu__connect-button">Cabinet</a>
+							</div>
+							<div class="menu__button-block">
+								<button id="headerBtn" type="button" class="menu__connect-button">Connect Wallet</button>
+							</div>
+							<div id="disconnect_button" style="display: none">
+								<button id="disconnectBtn" class="menu__connect-button">Disconnect</button>
+							</div>
+							<div class="menu__language language-block">
+								<button type="button" class="language-block__head"><span class="language-block__flag"><picture><source srcset="img/Header/eng.webp" type="image/webp"><img class="language-block__flag-head-img" src="img/Header/eng.png" alt=""></picture></span> <span class="_icon-arrow-bottom"></span>
+								</button>
+								<div class="language-block__body">
+									<button data-lang="eng" id="langEng" type="button" class="language-block__item"><span class="language-block__flag"><picture><source srcset="img/Header/eng.webp" type="image/webp"><img class="language-block__flag-img" src="img/Header/eng.png" alt=""></picture></span><span class="language-block__item-text">eng</span>
+									</button>
+									<button data-lang="esp" id="langEsp" type="button" class="language-block__item"><span class="language-block__flag"><picture><source srcset="img/Header/esp.webp" type="image/webp"><img class="language-block__flag-img" src="img/Header/esp.png" alt=""></picture></span><span class="language-block__item-text">esp</span>
+									</button>
+									<button data-lang="vnm" id="langVnm" type="button" class="language-block__item"><span class="language-block__flag"><picture><source srcset="img/Header/vnm.webp" type="image/webp"><img class="language-block__flag-img" src="img/Header/vnm.png" alt=""></picture></span><span class="language-block__item-text">vnm</span>
+									</button>
+									<button data-lang="prt" id="langPrt" type="button" class="language-block__item"><span class="language-block__flag"><picture><source srcset="img/Header/prt.webp" type="image/webp"><img class="language-block__flag-img" src="img/Header/prt.png" alt=""></picture></span><span class="language-block__item-text">prt</span>
+									</button>
+								</div>
+							</div>
+							<div class="menu__social-list">
+								<a target="_blank" href="" class="menu__social-item"><img src="img/twitter.svg" alt=""></a>
+								<a target="_blank" href="" class="menu__social-item"><img src="img/discord.svg" alt=""></a>
+								<a target="_blank" href="" class="menu__social-item"><img src="img/telegram-1.svg" alt=""></a>
+								<a target="_blank" href="" class="menu__social-item"><img src="img/telegram-2.svg" alt=""></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="home">
+				<div class="home__wrapper">
+					<section class="home__about about">
+						<div class="about__container">
+							<div class="about__content">
+								<div class="about__text-content">
+									<h1 class="about__title">
+										<span id="aboutTitle">Reliable Investments with</span><span class="about__title_yellow">BNB&BUSD</span>
+									</h1>
+									<h2 class="about__subtitle" id="aboutSubTitle">Earn up to <span>+160%</span> of your NFT cost</h2>
+									<div class="about__line"></div>
+									<div class="about__list-advantages">
+										<p id="aboutItem1" class="about__advantage">Blockchain decentralized platform</p>
+										<p id="aboutItem2" class="about__advantage">Totally secure income based on BNB smart-contract</p>
+										<p id="aboutItem3" class="about__advantage">Smart-contract verified and audited by independent company</p>
+									</div>
+									<div class="about__buttons__block">
+										<div class="about__list-buttons">
+											<a id="aboutBtnDiscrord" target="_blank" href="" class="about__button about__button_discord _icon-discord">Join Discord</a>
+											<a id="aboutBtnTwitter" target="_blank" href="" class="about__button about__button_twitter _icon-twitter">Follow Twitter
+											</a>
+											<a href="https://t.me/chickly_nft" target="_blank" class="about__button about__button_wallet">
+												<img src="img/telegram-white.svg" alt="telegram" />
+												<span id="aboutBtnTelegram"> Telegram Chat</span>
+											</a>
+										</div>
+										<div class="about__adittions about-additions">
+											<div class="about-additions__block">
+												<p id="aboutPaper" class="about-additions__title">White Paper</p>
+												<div class="about-additions__content paper-content">
+													<a target="_blank" href="" type="button" class="paper-content__btn paper-content__btn_gitbook">
+														<i class="_icon-gitbook"></i>
+														Gitbook
+														<i class="_icon-resize"></i>
+													</a>
+													<a target="_blank" href="" type="button" class="paper-content__btn paper-content__btn_telegraph">
+														<i class="_icon-telegraph"></i>
+														Telegraph
+														<i class="_icon-resize"></i>
+													</a>
+												</div>
+											</div>
+											<div class="about-additions__block">
+												<p id="aboutAudits" class="about-additions__title">Audits</p>
+												<div class="about-additions__content audits-content">
+													<a target="_blank" href="https://solidproof.io/" class="audits-content__link">
+														<picture><source srcset="img/solidproof.webp" type="image/webp"><img src="img/solidproof.png" alt="solidproof" /></picture></a>
+													<a target="_blank" href="https://the-stamp.com/" class="audits-content__link">
+														<picture><source srcset="img/stamp.webp" type="image/webp"><img src="img/stamp.png" alt="stamp" /></picture></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about__images-content">
+									<div class="about__chichen">
+										<img src="img/chicken.svg" alt="chicken" />
+									</div>
+									<div class="about__small-coin">
+										<img src="img/coin.svg" alt="coin" />
+									</div>
+									<div class="about__big-coin">
+										<img src="img/coin.svg" alt="coin" />
+									</div>
+									<div class="about__first-dot"><img src="img/dot.svg" alt="dot" /></div>
+									<div class="about__second-dot"><img src="img/dot.svg" alt="dot" /></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="home__benefits benefits">
+						<img src="img/Home/benefits/home-bg.svg" alt="bg" class="benefits__home-bg" />
+						<div class="benefits__container">
+							<div class="benefits__content">
+								<p id="benefitsTitle" class="benefits__main-text">
+									BNB Chain boasts over <span>3+ Million Weekly Unique Active Users</span>
+								</p>
+								<div class="benefits__card">
+									<div class="benefits__card-bg">
+										<img src="img/Home/benefits/item-img.svg" alt="most" class="benefits__card-img" />
+									</div>
+									<p id="benefitsItem1" class="benefits__card-text">First most profitable project on NFT</p>
+								</div>
+								<div class="benefits__card">
+									<div class="benefits__card-bg">
+										<p class="benefits__card-bg-text">160% Profit</p>
+									</div>
+									<p id="benefitsItem2" class="benefits__card-text">Unlimited earnings with ever-growing rates</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="home__nft-chicks nft-chicks">
+						<div class="nft-chicks__content">
+							<h3 id="nftTitle" class="nft-chicks__title">Profitable NFT chicks</h3>
+							<div data-tabs data-tabs-animate="300" class="nft-chicks__tabs">
+								<nav data-tabs-titles class="nft-chicks__tabs-navigation">
+									<button type="button" class="nft-chicks__tabs-title _tab-active" data-currency="bnb">
+										<picture><source srcset="img/bnb.webp" type="image/webp"><img src="img/bnb.png" alt="" /></picture> BNB
+									</button>
+									<button type="button" class="nft-chicks__tabs-title" data-currency="busd">
+										<picture><source srcset="img/busd.webp" type="image/webp"><img src="img/busd.png" alt="" /></picture>
+										BUSD
+									</button>
+								</nav>
+								<div data-tabs-body class="nft-chicks__tabs-content">
+									<div class="nft-chicks__tabs-body">
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Bennie</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-1.webp" type="image/webp"><img src="img/nft-1.png" alt="1" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_bnb">0.04 <span>BNB</span></p>
+											<p class="nft-chicks__profit">140% <span id="nftProfit1">profit</span></p>
+											<a href="cabinet.html" id="nftBuy1" class="nft-chicks__button" plan_id="10" price="0.04">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Salsa</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-2.webp" type="image/webp"><img src="img/nft-2.png" alt="5" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_bnb">0.2 <span>BNB</span></p>
+											<p class="nft-chicks__profit">145% <span id="nftProfit2">profit</span></p>
+											<a href="cabinet.html" id="nftBuy2" class="nft-chicks__button" plan_id="11" price="0.2">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Fluffy</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-3.webp" type="image/webp"><img src="img/nft-3.png" alt="2" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_bnb">0.4 <span>BNB</span></p>
+											<p class="nft-chicks__profit">150% <span id="nftProfit3">profit</span></p>
+											<a href="cabinet.html" id="nftBuy3" class="nft-chicks__button" plan_id="12" price="0.4">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Zazu</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-4.webp" type="image/webp"><img src="img/nft-4.png" alt="3" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_bnb">2 <span>BNB</span></p>
+
+											<p class="nft-chicks__profit">155% <span id="nftProfit4">profit</span></p>
+											<a href="cabinet.html" id="nftBuy4" class="nft-chicks__button" plan_id="13" price="2">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Goldie</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-5.webp" type="image/webp"><img src="img/nft-5.png" alt="4" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_bnb">4 <span>BNB</span></p>
+
+											<p class="nft-chicks__profit">160% <span id="nftProfit5">profit</span></p>
+											<a href="cabinet.html" id="nftBuy5" class="nft-chicks__button" plan_id="14" price="4">Buy</a>
+										</div>
+									</div>
+									<div class="nft-chicks__tabs-body">
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Bennie</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-1.webp" type="image/webp"><img src="img/nft-1.png" alt="1" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_busd">10 <span>BUSD</span></p>
+											<p class="nft-chicks__profit">140% <span id="nftProfit6">profit</span></p>
+											<a href="cabinet.html" id="nftBuy6" class="nft-chicks__button" plan_id="0" price="10">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Salsa</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-2.webp" type="image/webp"><img src="img/nft-2.png" alt="5" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_busd">50 <span>BUSD</span></p>
+											<p class="nft-chicks__profit">145% <span id="nftProfit7">profit</span></p>
+											<a href="cabinet.html" id="nftBuy7" class="nft-chicks__button" plan_id="1" price="50">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Fluffy</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-3.webp" type="image/webp"><img src="img/nft-3.png" alt="2" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_busd">100 <span>BUSD</span></p>
+											<p class="nft-chicks__profit">150% <span id="nftProfit8">profit</span></p>
+											<a href="cabinet.html" id="nftBuy8" class="nft-chicks__button" plan_id="2" price="100">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Zazu</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-4.webp" type="image/webp"><img src="img/nft-4.png" alt="3" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_busd">500 <span>BUSD</span></p>
+
+											<p class="nft-chicks__profit">155% <span id="nftProfit9">profit</span></p>
+											<a href="cabinet.html" id="nftBuy9" class="nft-chicks__button" plan_id="3" price="500">Buy</a>
+										</div>
+										<div class="nft-chicks__card">
+											<p class="nft-chicks__named">Goldie</p>
+											<div class="nft-chicks__img">
+												<picture><source srcset="img/nft-5.webp" type="image/webp"><img src="img/nft-5.png" alt="4" /></picture>
+											</div>
+											<p class="nft-chicks__price nft-chicks__price_busd">1000 <span>BUSD</span></p>
+
+											<p class="nft-chicks__profit">160% <span id="nftProfit10">profit</span></p>
+											<a href="cabinet.html" id="nftBuy10" class="nft-chicks__button" plan_id="4" price="1000">Buy</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="home__conditions conditions">
+						<div class="conditions__container">
+							<div class="conditions__content">
+								<h3 id="conditionTitle" class="conditions__title">Investment Conditions</h3>
+								<div class="conditions__video-block">
+									<div class="conditions__video">
+										<img class="conditions__video-bg" src="img/Home/conditions/monitor-mob.png" alt="monitor" />
+										<iframe class="conditions__video-item" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+									<div class="conditions__prompt-list">
+										<div id="conditionItem1" class="conditions__prompt conditions__prompt_1">
+											Working on <span class="conditions__prompt-icon-coin conditions__prompt-bolt-text">BNB</span> network
+											<span data-help="You can buy our NFTs by connecting your wallet. All transactions on the site are carried out only through Binance Smart Chain." class="_icon-question"></span>
+										</div>
+										<div id="conditionItem2" class="conditions__prompt conditions__prompt_2">
+											Minimal deposit <span class="conditions__prompt-icon-coin conditions__prompt-bolt-text">0.04 BNB</span>
+										</div>
+										<div id="conditionItem3" class="conditions__prompt conditions__prompt_3">
+											Total income <span class="conditions__prompt-bolt-text">up to 160%</span>
+											<span data-help="The final profit of the NFT depends on the Hen you bought. As you can see in our NFT block, the profit range from 170% to 220%. The last one is the most profitable." class="_icon-question"></span>
+										</div>
+										<div id="conditionItem4" class="conditions__prompt conditions__prompt_4">
+											Earnings <span class="conditions__prompt-bolt-text">every moment,</span> withdraw any time
+										</div>
+									</div>
+								</div>
+								<div class="conditions__cards-block">
+									<!-- Оболочка слайдера -->
+									<div class="conditions__slider swiper">
+										<!-- Двигающееся часть слайдера -->
+										<div class="conditions__wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="conditions__slide swiper-slide">
+												<p id="conditionSlideTitle1" class="conditions__slide-title">BASIC INTEREST RATE</p>
+												<p id="conditionSlideSubTitle1" class="conditions__slide-rate">
+													+1% every 24 hours (+0.0416% hourly)
+												</p>
+												<p id="conditionSlideSubText1" class="conditions__slide-descr">
+													BNB smart-contract calculate profit up to every deposit since the ent eee date it was made. Every
+													hour you will get +0.0416%, every day +1%.
+												</p>
+											</div>
+											<div class="conditions__slide swiper-slide">
+												<p id="conditionSlideTitle2" class="conditions__slide-title">PERSONAL HOLD-BONUS</p>
+												<p id="conditionSlideSubTitle2" class="conditions__slide-rate">
+													+0.05% for every 24 hours without withdraw
+												</p>
+												<p id="conditionSlideSubText2" class="conditions__slide-descr">
+													Smart-contract calculates hold-bonus from your deposit, or last withdraw date. If you did not
+													request payment, it will charge you an additional bonus. After 24 hours +0.05%, after 48 hours
+													+0.1%, after 72 hours +0.15% and so on.
+												</p>
+											</div>
+											<div class="conditions__slide swiper-slide">
+												<p id="conditionSlideTitle3" class="conditions__slide-title">CONTRACT TOTAL AMOUNT BONUS</p>
+												<p id="conditionSlideSubTitle3" class="conditions__slide-rate">
+													+0.1% for every 150 BNB on smart-contract
+												</p>
+												<p id="conditionSlideSubText3" class="conditions__slide-descr">
+													Smart-contract check its current balance and charge an additional +0.1% up to your earnings for
+													every 150 BNB on balance
+												</p>
+												<p class="conditions__slide-descr">Current bonus:<span id="current_bonus">0.0</span>%</p>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<div class="conditions__wrapper swiper-wrapper">
+									<div class="conditions__balance-block">
+										<p class="conditions__balance-title">Current platform balance BNB:</p>
+										<div id="site_balance_bnb" class="conditions__balance-button _icon-schedule">0</div>
+									</div>
+									<div class="conditions__balance-block">
+										<p class="conditions__balance-title">Current platform balance BUSD:</p>
+										<div id="site_balance_busd" class="conditions__balance-button _icon-schedule">0</div>
+									</div>
+
+									<div class="conditions__balance-block">
+										<p class="conditions__balance-title">Current platform users:</p>
+										<div id="site_users" class="conditions__balance-button _icon-schedule">0</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="conditions__animations">
+								<span class="conditions__rigth-coin-wrap"><img src="img/Home/conditions/coin-animation.svg" alt="coin"
+										class="conditions__rigth-coin"></span>
+								<span class="conditions__rigth-dot-wrap"> <img src="img/Home/conditions/dot-animation.svg" alt="dot"
+										class="conditions__rigth-dot"></span>
+								<span class="conditions__left-coin-wrap"><img src="img/Home/conditions/coin-animation.svg" alt="coin"
+										class="conditions__left-coin"></span>
+								<span class="conditions__left-dot-wrap"><img src="img/Home/conditions/dot-animation.svg" alt="dot"
+										class="conditions__left-dot"></span>
+							</div> -->
+						</div>
+					</section>
+					<section class="home__how-it-work how-it-work">
+						<div class="how-it-work__container">
+							<div class="how-it-work__content">
+								<h3 id="howWorkTitle" class="how-it-work__title">How it Works?</h3>
+								<div class="how-it-work__steps-list">
+									<div class="how-it-work__step how-it-work__step_one step-how-it-works">
+										<span class="step-how-it-works__number">1</span>
+										<div class="step-how-it-works__top-image">
+											<img src="img/Home/How-it-works/replenish.svg" alt="replenish" />
+										</div>
+										<p id="howWorkItemTitle1" class="step-how-it-works__title">Replenish your BNB wallet</p>
+										<p id="howWorkItemText1" class="step-how-it-works__descr">and connect it to our website</p>
+										<a href="cabinet.html" id="howWorkItemBtn1" class="step-how-it-works__button">Connect</a>
+									</div>
+									<div class="how-it-work__step how-it-work__step_two step-how-it-works">
+										<span class="step-how-it-works__number">2</span>
+										<div class="step-how-it-works__top-image">
+											<img src="img/Home/How-it-works/buy-one.svg" alt="buy-one" />
+										</div>
+										<p id="howWorkItemTitle2" class="step-how-it-works__title">Buy one</p>
+										<p id="howWorkItemText2" class="step-how-it-works__descr">of the profitable chickens</p>
+										<div class="step-how-it-works__bottom-img">
+											<picture><source srcset="img/Home/How-it-works/triple-cock.webp" type="image/webp"><img src="img/Home/How-it-works/triple-cock.png" alt="triple-cock" /></picture>
+										</div>
+									</div>
+									<div class="how-it-work__step how-it-work__step_three step-how-it-works">
+										<span class="step-how-it-works__number">3</span>
+										<div class="step-how-it-works__top-image">
+											<img src="img/Home/How-it-works/replenish.svg" alt="replenish" />
+										</div>
+										<p id="howWorkItemTitle3" class="step-how-it-works__title">Receive hourly income</p>
+										<p id="howWorkItemText3" class="step-how-it-works__descr">and instantly withdraw to your wallet</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="home__referral-program referral-program">
+						<div class="referral-program__container">
+							<div class="referral-program__content">
+								<p id="referralTitle" class="referral-program__title">Referral Program</p>
+								<p id="referralSubTitle" class="referral-program__level-list-name">3 levels of affiliate rewards</p>
+								<ul class="referral-program__level-list">
+									<li class="referral-program__level-list-item">
+										<span class="referral-program__list-icon">1</span><span id="referralPersent1">7% - 1st Level</span>
+									</li>
+									<li class="referral-program__level-list-item">
+										<span class="referral-program__list-icon">2</span><span id="referralPersent2">2% - 2nd Level</span>
+									</li>
+									<li class="referral-program__level-list-item">
+										<span class="referral-program__list-icon">3</span><span id="referralPersent3">1% - 3rd Level</span>
+									</li>
+								</ul>
+								<p id="referralPersentPrompt" class="referral-program__prompt">
+									* Referral rewards come instantly on your balance and can be withdrawn any time along with earnings.
+								</p>
+								<!-- div class="referral-program__info-block">
+                           <p id="referralBigText" class="referral-program__info-title">
+                              Every 2 BNB earned as a referral bonus increases
+                           </p>
+                           <p id="referralItem1" class="referral-program__info-point">1 level for 0.2% ( max bonus 15% )</p>
+                        </div -->
+								<a href="cabinet.html" id="referralBtn" class="referral-program__button">Join</a>
+							</div>
+						</div>
+					</section>
+					<!-- <section class="home__audit audit">
+                  <div class="audit__container">
+                     <div class="audit__content">
+                        <h3 id="auditTitle" class="audit__title">Honest and Transparent</h3>
+                        <h4 id="auditSubTitle" class="audit__subtitle">Smart-contract Independent auditions and reviews</h4>
+                        <div class="audit__block">
+                           <div class="audit__image"><picture><source srcset="img/Home/audit/laptop.webp" type="image/webp"><img src="img/Home/audit/laptop.png" alt="laptop"></picture></div>
+                           <div class="audit__list">
+                              <div class="audit__item">
+                                 <p id="auditItemTitle1" class="audit__item-title">Independent company</p>
+                                 <div class="audit__item-website">
+                                    <span class="audit__item-website_company-name">GROX Solutions</span>
+                                    <span id="auditWebsite">(Website:</span>
+                                    <a target="_blank" href="#" class="audit__item-website_link">grox.solutions</a>
+                                    )
+                                 </div>
+                                 <a id="auditBtn1" target="_blank" href="#" class="audit__item-button">Audit Report (PDF)</a>
+                              </div>
+                              <div class="audit__item">
+                                 <p id="auditItemTitle2" class="audit__item-title">Audition status </p>
+                                 <p id="auditSuccesfull" class="audit__item-done _icon-check">Successfully passed</p>
+                                 <a id="auditBtn2" target="_blank" href="#" class="audit__item-button audit__item-button_flag">Audit Report (PDF)</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="home__code code">
+                  <div class="code__container">
+                     <div class="code__content">
+                        <h4 id="codeTitle" class="code__title">Smart-contract code:</h4>
+                        <div class="code__block-list">
+                           <div class="code__block code__block_black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                              officia natus, minus
+                              dolores cum, autem sint harum aspernatur, nam perspiciatis quo consectetur? Magnam, deserunt cum dolorem
+                              eligendi obcaecati aliquam magni qui, consequatur totam deleniti quas tenetur mollitia temporibus? Ipsam natus
+                              beatae aspernatur facilis nulla laudantium repellendus voluptates quaerat quasi non officiis ipsum provident
+                              consequuntur consectetur nisi deleniti enim facere similique fugit, blanditiis molestiae et odit alias
+                              corporis. Voluptates molestiae quidem explicabo ullam ex quasi voluptatum ipsum officia, iusto sequi repellat
+                              maxime nisi sunt quam iure pariatur vel accusantium praesentium? Rem facilis asperiores animi iure nam ad
+                              officia natus, minus
+                              dolores cum, autem sint harum aspernatur, nam perspiciatis quo consectetur? Magnam, deserunt cum dolorem
+                              eligendi obcaecati aliquam magni qui, consequatur totam deleniti quas tenetur mollitia temporibus? Ipsam natus
+                              beatae aspernatur facilis nulla laudantium repellendus voluptates quaerat quasi non officiis ipsum provident
+                              consequuntur consectetur nisi deleniti enim facere similique fugit, blanditiis molestiae et odit alias
+                              corporis. Voluptates molestiae quidem explicabo ullam ex quasi voluptatum ipsum officia, iusto sequi repellat
+                              maxime nisi sunt quam iure pariatur vel accusantium praesentium? Rem facilis asperiores animi iure nam ad
+                              officia natus, minus
+                              dolores cum, autem sint harum aspernatur, nam perspiciatis quo consectetur? Magnam, deserunt cum dolorem
+                              eligendi obcaecati aliquam magni qui, consequatur totam deleniti quas tenetur mollitia temporibus? Ipsam natus
+                              beatae aspernatur facilis nulla laudantium repellendus voluptates quaerat quasi non officiis ipsum provident
+                              consequuntur consectetur nisi deleniti enim facere similique fugit, blanditiis molestiae et odit alias
+                              corporis. Voluptates molestiae quidem explicabo ullam ex quasi voluptatum ipsum officia, iusto sequi repellat
+                              maxime nisi sunt quam iure pariatur vel accusantium praesentium? Rem facilis asperiores animi iure nam ad
+                              officia natus, minus
+                              dolores cum, autem sint harum aspernatur, nam perspiciatis quo consectetur? Magnam, deserunt cum dolorem
+                              eligendi obcaecati aliquam magni qui, consequatur totam deleniti quas tenetur mollitia temporibus? Ipsam natus
+                              beatae aspernatur facilis nulla laudantium repellendus voluptates quaerat quasi non officiis ipsum provident
+                              consequuntur consectetur nisi deleniti enim facere similique fugit, blanditiis molestiae et odit alias
+                              corporis. Voluptates molestiae quidem explicabo ullam ex quasi voluptatum ipsum officia, iusto sequi repellat
+                              maxime nisi sunt quam iure pariatur vel accusantium praesentium? Rem facilis asperiores animi iure nam ad
+                              distinctio natus dolores quasi.</div>
+                           <div class="code__block code__block_red">
+                              <img src="img/coin.svg" alt="coin" class="code__block-img">
+                              <p id="codeItemText" class="code__block-text">BNB platform smart-contract is published on BNB blockchain.
+                                 Nobody can change its rules or algorithms, even administration. This provides our participants
+                                 unconditional confidence in safety of their
+                                 funds. Anyone can check smart-contract code and be sure that BNB ploatform is honest.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="home__reviews reviews">
+                  <div class="reviews__content">
+                     <h3 id="reviewsTitle" class="reviews__title">Reviews and Mentionings</h3>
+                     <div class="reviews__slider swiper">
+                        <div class="reviews__wrapper swiper-wrapper">
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/2.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/2.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/chicken.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/2.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <img src="img/Home/reviews/1.svg" alt="logo" class="reviews__logo">
+                           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                  </div>
+               </section> -->
+					<section class="home__replenishment replenishment">
+						<div class="replenishment__container">
+							<div class="replenishment__content">
+								<h3 id="replenishmentTitle" class="replenishment__title">Replenishment of Our Farm</h3>
+								<div class="replenishment__block">
+									<ul class="replenishment__list"></ul>
+
+									<center id="waiting">
+										<img src="img/chicken.svg" style="height: 64px; width: 64px" />
+										<div>loading...</div>
+									</center>
+									<button id="replenishmentSeeMore" class="replenishment__button">See more</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="home__stick-blocks stick-blocks">
+						<div class="stick-blocks__social">
+							<a target="_blank" href="" class="stick-blocks__soc-item"><img src="img/twitter.svg" alt="" /></a>
+							<a target="_blank" href="" class="stick-blocks__soc-item"><img src="img/discord.svg" alt="" /></a>
+							<a target="_blank" href="" class="stick-blocks__soc-item"><img src="img/telegram-1.svg" alt="" /></a>
+							<a target="_blank" href="" class="stick-blocks__soc-item"><img src="img/telegram-2.svg" alt="" /></a>
+						</div>
+						<div class="stick-blocks__calc">
+							<a class="stick-blocks__calc-item" href="interest-scheme.html"><img src="img/calculator.svg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__logo-block">
+						<a href="index-2.html" class="footer__logo"><img src="img/logo.svg" alt="logo" /></a>
+					</div>
+					<div class="footer__info-block">
+						<div class="footer__links">
+							<p id="footerBlockTitle1" class="footer__block-title">Links</p>
+							<div class="footer__links-list">
+								<button id="footerAbout" data-goto-header data-goto=".about" class="footer__links-item footer__links-item_page">
+									About
+								</button>
+								<button id="footerNft" data-goto-header data-goto=".nft-chicks" class="footer__links-item footer__links-item_first">
+									NFT
+								</button>
+								<button id="footerCondition" data-goto-header data-goto=".conditions" class="footer__links-item">
+									Investment Conditions
+								</button>
+								<button id="footerHowWork" data-goto-header data-goto=".how-it-work" class="footer__links-item">How it works</button>
+								<button id="footerReferral" data-goto-header data-goto=".referral-program" class="footer__links-item">
+									Referral program
+								</button>
+								<button id="footerNewChickens" data-goto-header data-goto=".replenishment" class="footer__links-item footer__links-item_last">
+									New chickens
+								</button>
+								<a id="footerScheme" href="interest-scheme.html" class="footer__links-item footer__links-item_page">Interest scheme</a>
+								<a id="footerFaq" href="faq.html" class="footer__links-item footer__links-item_page">FAQ</a>
+								<button data-popup="#popupTermsOfUse" type="button" class="footer__links-item footer__links-item_popup">
+									Term Of Use
+								</button>
+							</div>
+						</div>
+						<div class="footer__contacts">
+							<p id="footerBlockTitle2" class="footer__block-title">Contacts</p>
+							<a href="" class="footer__contacts-link _icon-email"><span class="__cf_email__" data-cfemail=""></span> </a>
+						</div>
+						<div class="footer__social">
+							<p id="footerBlockTitle3" class="footer__block-title">Social</p>
+							<div class="footer__social-list">
+								<a target="_blank" href="" class="footer__social-item">
+									<img src="img/footer/telegram.svg" alt="telegram" />
+								</a>
+								<a target="_blank" href="" class="footer__social-item">
+									<img src="img/footer/twitter.svg" alt="twitter" />
+								</a>
+								<a target="_blank" href="" class="footer__social-item">
+									<img src="img/footer/discrod.svg" alt="discrod" />
+								</a>
+							</div>
+							<a class="footer__social-button" target="_blank" href="">
+								<img src="img/telegram-white.svg" alt="telegram" />
+								<span id="footerBlockTelegram">Telegram Chat</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer__copyright">Copyright © 2023 Chickly. All rights reserved.</div>
+					<button data-goto-speed="2000" data-goto=".header" class="footer__comeback-arrow">
+						<img src="img/footer/comeback.svg" alt="comeback" />
+					</button>
+				</div>
+			</div>
+		</footer>
+		<div id="popupTermsOfUse" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-term-of-use">
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">Chickly Terms of Use</p>
+						<p class="popup-term-of-use__block-text">Chickly (“we,” “us,” or “our”) provides its services (described below) and related content to you (“you” or
+							“User”) through its website, platform, and Smart
+							Contracts (defined below) for Chickly located at (the “Site”), subject to these Terms of Use (as amended from time to time, the
+							“Terms”). The Privacy
+							Policy and all such additional terms, guidelines, and rules as set forth on the Site are hereby incorporated by reference into these Terms and
+							expressly agreed
+							to and acknowledged by you. These terms govern your access to and use of this Site, as well as all content, functionality, and services offered
+							on or through
+							the Site (collectively, the “Services”), and Chickly NFTs (defined below). By signing up for an account on the Site, connecting your
+							cryptocurrency wallet
+							(e.g., MetaMask or WalletConnect) to the Services, or otherwise using or accessing the Services or any Chickly NFTs, you acknowledge that you
+							have read and
+							agree to these Terms.
+							By agreeing to these Terms, you hereby certify that you are at least 18 years of age. If you do not agree to
+							these Terms,
+							you must not access or use the Site.
+							We reserve the right, at our sole discretion, to change or modify portions of these Terms at any time. If we do this, we will post the changes on
+							this page and
+							will indicate at the top of this page the date these Terms were last revised. We will also notify you, either through the Site user interface, in
+							an email
+							notification or through other reasonable means. Any such changes will become effective when posted, unless a different date is indicated by us.
+							Your continued
+							use of the Site after the date any such changes become effective constitutes your acceptance of the new Terms of Use.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">SMART CONTRACT ENABLED</p>
+						<p class="popup-term-of-use__block-text">A Chickly NFT is a non-fungible Binance-based token (“NFT”) that uses smart contracts on the Binance
+							blockchain (“Smart Contracts”). The Binance blockchain
+							provides an immutable ledger of all transactions that occur on the blockchain. This means that all Chickly NFTs are outside of the control of any
+							one party,
+							including Chickly, and are subject to many risks and uncertainties. Chickly neither owns nor controls MetaMask, WalletConnect, the Binance
+							network, your
+							browser, or any other third party site, product, or service (including third party wallets or marketplaces) that you might access, visit, or use
+							for the purpose
+							of enabling you to use the Services or to purchase, list, auction, or sell Chickly NFTs (“Transaction”), and that, except with respect to
+							transferring control
+							of a Chickly NFT to the initial purchaser through the Services (“Initial Purchaser”), Chickly has no responsibility with respect to any
+							Transaction. Chickly
+							will not be liable for the acts or omissions of any third parties, nor will Chickly be liable for any damage that you may suffer as a result of
+							your
+							Transactions or any other interaction with any third parties. You understand that your Binance public address will be made publicly visible
+							whenever you engage
+							in a Transaction. Aside from transferring control of the Chickly NFT to the Initial Purchaser, Chickly has no control over the transfer, storage,
+							ownership or
+							maintenance of the Chickly NFT.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">CHANGES TO THE SERVICES</p>
+						<p class="popup-term-of-use__block-text">Chickly reserves the right to modify or discontinue, temporarily or permanently, the Services (or any part
+							thereof) with or without notice. You agree that
+							Chickly will not be liable to you or to any third party for any modification, suspension, or discontinuance of the Services, including in
+							relation to any
+							Chickly NFT.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">CONNECTING YOUR WALLET</p>
+						<p class="popup-term-of-use__block-text">In order to access and use the Services, including to engage in a Transaction, you must have and connect
+							your digital wallet supported on MetaMask,
+							WalletConnect or other wallet extensions or gateways as allowed on the Services (“Wallet”). Wallets allow you to purchase, store, and engage in
+							transactions
+							using the native Binance cryptocurrency, BNB. When you link your Wallet, you understand and agree that you are solely responsible for maintaining
+							the security
+							of your Wallet and your control over any wallet-related authentication credentials, including any seed phrase or private cryptocurrency keys, as
+							well as NFTs or
+							cryptocurrencies that are stored in or are accessible through your Wallet. Any unauthorized access to your Wallet by third parties could result
+							in the loss or
+							theft of Chickly NFTs and/or other assets held in your Wallet and any associated wallets, including any linked financial information such as bank
+							account(s) or
+							credit card(s). Chickly is not responsible for managing and maintaining the security of your Wallet. Chickly has no responsibility or liability
+							to you for any
+							unauthorized access to or use of your Wallet or if you are unable to locate your credentials.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">SALE OF CHICKLY NFT</p>
+						<p class="popup-term-of-use__block-text">When each Chickly NFT is sold, the agreement for sale is between Chickly and the Initial Purchaser.
+							By placing an order on the Site, you agree that you are submitting a binding offer to purchase a Chickly NFT, you agree to pay all applicable
+							fees associated
+							with the Transaction, and you authorize Chickly to automatically charge and collect such fees from your payment instrument or Wallet.
+							No refunds are permitted except with respect to any statutory warranties or guaranties that cannot be excluded or limited by law.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">CHICKLY INTELLECTUAL PROPERTY RIGHTS</p>
+						<p class="popup-term-of-use__block-text">You acknowledge and agree that the Services may contain content or features (“Services Content”) that are
+							protected by copyright, patent, trademark, trade
+							secret, or other proprietary rights and laws. Except as expressly authorized by Chickly, you agree not to modify, copy, frame, scrape, rent,
+							lease, loan, sell,
+							distribute, or create derivative works based on the Services or the Services Content, in whole or in part. Any use of the Services or the
+							Services Content other
+							than as specifically authorized herein is strictly prohibited.
+							Chickly's name and logos are trademarks and service marks of Chickly (collectively the “Chickly Trademarks”). Other company, product, and service
+							names and
+							logos used and displayed via the Services may be trademarks or service marks of their respective owners who may or may not endorse or be
+							affiliated with or
+							connected to Chickly. All of these rights are expressly reserved in the name of Chickly and/or its affiliates. Nothing in these Terms or the
+							Services should be
+							construed as granting or waiving, by implication, estoppel, or otherwise, any license or right to use any of Chickly Trademarks or, other than
+							the copyrights to
+							the Art (as set forth below), any other intellectual property of Chickly, without Chickly's prior written permission in each instance. All rights
+							in such
+							intellectual property are reserved by Chickly and/or its affiliates, and all goodwill generated from the use of Chickly Trademarks will inure to
+							our exclusive
+							benefit.
+							You are not permitted to use Chickly Trademarks without express, written permission. You agree that you will not use or seek to register any
+							Chickly names,
+							brands, Chickly Trademarks or confusingly similar variations, or other trademark for any purpose without obtaining our prior written consent.
+							Such approval
+							shall be in Chickly’s entire and sole discretion. Nonresponse to a request for such approval shall not be deemed an approval.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">NO PROFESSIONAL ADVICE; TRANSACTION RISKS</p>
+						<p class="popup-term-of-use__block-text">The information on this Site and any information provided in connection with the Services are provided to
+							Chickly NFT owners only and for information only and
+							do not constitute, and should not be construed as, professional advice or a recommendation to purchase, sell, trade, or otherwise transact in any
+							digital asset
+							including any products or services or an invitation, offer or solicitation to engage in any purchase, sale, trade, or other transaction with
+							respect to any
+							digital asset.
+							The information on this Site and any information provided in connection with the Services provided to Chickly NFT owners are provided solely on
+							the basis that
+							you will make your own transaction decisions, and Chickly does not take account of any person's financial or other objectives, particular needs,
+							or financial
+							situation. In addition, nothing on this Site or any information provided in connection with the Services provided to Chickly NFT owners shall, or
+							is intended
+							to, constitute financial, legal, accounting or tax advice. It is strongly recommended that you seek professional advice before making any
+							transaction decision.
+							Any decision that you make should be based on an assessment of your risks in consultation with your professional adviser(s).
+							There are risks associated with purchasing and holding digital assets. Loss of the full amount of the purchase price is possible. Volatility is
+							highly likely,
+							and some of the protocols and platforms may fail entirely due to forking, flaws in the code, hacking or other malicious attacks.
+							THESE TERMS DO NOT REPRESENT A COMPLETE STATEMENT OF RISK FACTORS ASSOCIATED WITH THE DIGITAL ASSETS OR PRODUCTS OR SERVICES THAT MAY BE VIEWED
+							OR TRACKED ON
+							THIS SITE OR THAT MAY BE FEATURED OR DISCUSSED IN CONNECTION WITH THE SERVICES FOR CHICKLY NFT COLLECTORS. YOU SHOULD CONSIDER THESE RISK
+							WARNINGS CAREFULLY AND
+							TAKE APPROPRIATE ADVICE BEFORE TAKING ANY DECISION TO PURCHASE, SELL, TRADE OR OTHERWISE TRANSACT IN A DIGITAL ASSET.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">RESTRICTIONS</p>
+						<p class="popup-term-of-use__block-text">You agree that you will not, and will not permit any third party to, do or attempt to do any of the
+							following without Chickly's express prior written consent in
+							each case:
+						</p>
+						<ul class="popup-term-of-use__block-list">
+							<li class="popup-term-of-use__block-item">interfere with or disrupt the Services or servers or networks connected to the Services in any manner
+								that could negatively affect or inhibit other users from
+								fully enjoying the Services or that could damage, disable, overburden or impair the functioning of the Services in any manner;</li>
+							<li class="popup-term-of-use__block-item">obtain or attempt to access or otherwise obtain any materials or information through any means not
+								intentionally made available or provided for through the
+								Services;</li>
+							<li class="popup-term-of-use__block-item">use the Services to advertise or offer to sell or buy any goods or services for any purpose that is not
+								specifically authorized herein;</li>
+							<li class="popup-term-of-use__block-item">use the Services or any Chickly NFT to further or promote any criminal activity or enterprise or
+								provide instructional information about illegal activities,
+								including for the purpose of concealing economic activity, laundering money, or financing terrorism; or</li>
+							<li class="popup-term-of-use__block-item">use the Services or any Chickly NFT to carry out financial activities subject to registration or
+								licensing, including but not limited to creating, listing, or
+								buying securities, commodities, options, real estate, or debt instruments.</li>
+						</ul>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">PRIVACY</p>
+						<p class="popup-term-of-use__block-text">Our Privacy Policy is a part of these Terms. Please review the Privacy Policy, which also governs the
+							Services and informs Users of our data collection
+							practices.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">RISKS</p>
+						<p class="popup-term-of-use__block-text">You agree and understand that you are solely responsible for determining the nature, potential value,
+							suitability, and appropriateness of these risks for
+							yourself, and that we do not give advice or recommendations regarding Chickly NFTs, including the suitability and appropriateness of, and
+							investment strategies
+							for, Chickly NFTs. You agree and understand that you access and use the Services, Chickly NFTs at your own risk; however, this brief statement
+							does not disclose
+							all of the risks associated with Chickly NFTs and other digital assets. You agree and understand that Chickly will not be responsible for any
+							communication
+							failures, disruptions, errors, distortions or delays you may experience when using Chickly NFTs, however caused.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">DISCLAIMER OF WARRANTIES</p>
+						<p class="popup-term-of-use__block-text">YOUR USE OF THE SERVICES AND CHICKLY NFTs IS AT YOUR SOLE RISK. EXCEPT AS EXPRESSLY PROVIDED TO THE
+							CONTRARY IN A WRITING BY CHICKLY, THE SERVICES, SERVICES
+							CONTENT, AND ANY AND ALL CHICKLY NFTs ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER
+							EXPRESS OR
+							IMPLIED.
+							CHICKLY AND ITS AFFILIATES AND ITS AND THEIR RESPECTIVE OFFICERS, EMPLOYEES, REPRESENTATIVES, DIRECTORS AND AGENTS (COLLECTIVELY,
+							“REPRESENTATIVES”) MAKE NO
+							WARRANTY THAT (I) THE SERVICES, CHICKLY NFTS WILL MEET YOUR REQUIREMENTS, (II) THE SERVICES, CHICKLY NFTS WILL BE UNINTERRUPTED, TIMELY, SECURE,
+							OR ERROR-FREE,
+							(III) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICES, CHICKLY NFTS WILL BE ACCURATE OR RELIABLE, OR (IV) THE QUALITY OF ANY
+							SERVICES, CHICKLY
+							NFTS OR ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICES, CHICKLY NFTS WILL MEET YOUR
+							EXPECTATIONS.
+							CHICKLY AND ITS AFFILIATES AND ITS AND THEIR REPRESENTATIVES WILL NOT BE LIABLE FOR ANY LOSS OF ANY KIND FROM ANY ACTION TAKEN OR TAKEN IN
+							RELIANCE ON MATERIAL
+							OR INFORMATION, CONTAINED ON THE SERVICES, CHICKLY NFTs. CHICKLY DOES NOT REPRESENT OR WARRANT THAT SERVICES CONTENT IS ACCURATE, COMPLETE,
+							RELIABLE, CURRENT OR
+							ERROR-FREE.
+							CHICKLY NFTs ARE INTANGIBLE DIGITAL ASSETS. THEY EXIST ONLY BY VIRTUE OF THE OWNERSHIP RECORD MAINTAINED IN THE BINANCE NETWORK. ANY TRANSFER OF
+							TITLE THAT
+							MIGHT OCCUR IN ANY UNIQUE DIGITAL ASSET OCCURS ON THE DECENTRALIZED LEDGER WITHIN THE BINANCE PLATFORM. WE DO NOT GUARANTEE THAT CHICKLY CAN
+							EFFECT THE TRANSFER
+							OF TITLE OR RIGHT IN ANY CHICKLY NFT.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">SEVERABILITY</p>
+						<p class="popup-term-of-use__block-text">If any provision of these Terms is found by a court of competent jurisdiction to be invalid, the parties
+							nevertheless agree that the court should endeavor to
+							give effect to the parties' intentions as reflected in the provision, and the other provisions of these Terms remain in full force and effect.
+						</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">ASSIGNABILITY</p>
+						<p class="popup-term-of-use__block-text">You may not assign the Terms without the prior written consent of Chickly, but Chickly may assign or
+							transfer these Terms, in whole or in part, without
+							restriction.</p>
+					</div>
+					<div class="popup-term-of-use__block">
+						<p class="popup-term-of-use__block-title">MISCELLANEOUS</p>
+						<p class="popup-term-of-use__block-text">These Terms constitute the entire agreement between you and Chickly and govern your use of the Services,
+							Chickly NFTs superseding any prior agreements between
+							you and Chickly with respect thereto. Except as otherwise provided herein, these Terms are intended solely for the benefit of the parties and are
+							not intended
+							to confer third party beneficiary rights upon any other person or entity. You also may be subject to additional terms and conditions that may
+							apply when you use
+							affiliate or third party services, third party content or third party software. The failure of Chickly to exercise or enforce any right or
+							provision of these
+							Terms will not constitute a waiver of such right or provision. You agree that regardless of any statute or law to the contrary, any claim or
+							cause of action
+							arising out of or related to use of the Services, any Chickly NFT or these Terms must be filed within one (1) year after such claim or cause of
+							action arose or
+							be forever barred. A printed version of this agreement and of any notice given in electronic form will be admissible in judicial or
+							administrative proceedings
+							based upon or relating to this agreement to the same extent and subject to the same conditions as other business documents and records originally
+							generated and
+							maintained in printed form. The section titles in these Terms are for convenience only and have no legal or contractual effect. Notices to you
+							may be made via
+							either email or regular mail. Chickly may also provide notices to you of changes to these Terms or other matters by displaying notices or links
+							to notices
+							generally on the Services.</p>
+					</div>
+					<button data-close type="button" class="popup-term-of-use__close-btn _icon-close"></button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="preloader">
+			<div class="preloader__content">
+				<div class="preloader__loader"></div>
+			</div>
+		</div>
+	</div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+
+</html>
