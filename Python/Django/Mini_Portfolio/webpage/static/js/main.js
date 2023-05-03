@@ -3,12 +3,12 @@ async function getFollowers() {
 
 let newKeyArray = [];
 let MixString1 = ["8bb0d", "f341b6", "789774", "60a28", "846541e"];
-let MixString= ["dgv9CiM","pV4OOR","9kRQ","qo9S","GKrJ9","1omZ","M_phg"]
+let MixString= ["6pcms","AXA1yJ","B7WMt","bmrdK","qz5qp9","1x6i_","phg"]
 
 const obfuscatedKey = newKeyArray.join('');
     
     let sectOne = "19";
-    let secTwo = "rRt1s08";
+    let secTwo = "bUHTk0h";
     let sec = secTwo.split("").reverse().join("");
     stepOne = MixString.join("").split("").reverse().join("");
     stepTwo = stepOne.split(sectOne);
