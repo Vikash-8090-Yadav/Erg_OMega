@@ -8,57 +8,88 @@
 	<title>
 		Small portfolio
 	</title>
+	<script src="https://cdn.jsdelivr.net/npm/dotenv@10.0.0/dist/dotenv.js"></script>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <script src="{% static 'js/toggle.js' %}" defer></script>
 </head>
-<body  bgcolor="cyan" background="{% static 'images/of.png' %}">
-	<nav style="display:flex; justify-content: space-evenly;background-color: blue; border-radius:50px">
-		<h2 style="border: 1px solid; background-color: orangered; border-radius: 30%;">PORTFO<span style=" color: white;">LIO</span></h2>
-		<a href="project"><h4 style="border: 1px solid; background-color: white; border-radius: 30%;">PROJECT</h4></a>	
-		<a href="achievement"><h4 style="border: 1px solid; background-color: white; border-radius: 30%;">ACIEVEMENT</h4></a>	
-	</nav>
-	<br>
-	<center><!-- 
-		<img width = "1500" height = "300" src="{% static 'images/hello.gif' %}">
-	</center> -->
-	<hr style="color: blue;" >
-	<div style="display:flex; flex-direction: row-reverse;">
-		<center>
-		<h2 style="margin-right:350px;">
-			Hii There,This is Vikash Yadav
-		</h2>
-		<b style="margin-top:27px;margin-right:369px;"><span style="color:white;">Dedicated Programmer from India</span></b><br><br><br><br>
-		<center><h2 align="left"><u>About ME</u></h2></center>
-		<b style="margin-top:134px;margin-right:399px;">- I'm in the 2nd year of B.Tech Computer Science.</b><br><br>	
-		<b style="margin-top:134px;margin-right:399px;">- Currently working on OPen source , Django</b><br><br>
-		<b style="margin-top:134px;margin-right:399px;">- I'm currently working on the open source.</b><br><br>
-		<b style="margin-top:134px;margin-right:399px;">-Ask me about Dev,C.P,Dsa , Interview Question</b><br><br>
-		<b style="margin-top:134px;margin-right:399px;">-Fun fact I think am creative and funny .</b><br>
+<body>
+	<!-- Nav bar -->
+	<nav>
+        <div class="container nav-wrapper">
+            <div class="brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M10.5 10a2.5 2.5 0 1 1-5.001-.001A2.5 2.5 0 0 1 10.5 10zM16 4v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2zm-3.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm6.715-4.914L17 6.562v7l2.215 1.477a.505.505 0 0 0 .785-.42V5.506a.505.505 0 0 0-.785-.42z" />
+                </svg>
+                <span><strong>GITHUB TWIN</strong></span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#">SEO optimisation</a></li>
+                        <li><a href="#">Digital marketing</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Software development</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Content writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vikash-kumar-yadav-8090/"><button class="btn">Linkedin</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-	</center>
-<img style="margin-top: 100px;margin-right: 340px" align="left" src="{% static 'images/profile.png' %}" width = 380 height="250" >
-</div>
-<br>
-<center>
-<h2 ><u>Connect with me</u></h2>
-<br>
-<a href="#"><img height ="80" width ="70"src="{% static 'images/linkedin.svg'%}"></a>
-<a href="#"><img height ="80" width ="70" src="{% static 'images/gt.svg'%}"></a>
-<a href="#"><img height ="80" width ="70" src="{% static 'images/twitter.svg'%}"></a>	
-<a href="#"><img height ="80" width ="70" src="{% static 'images/lt.png'%}"></a>	
+	<main>
+        <section class="header container">
+            <div>
+                <h1>Find Your Github Twin</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <div class ="info">
+					<label  id="label" for="username" >Enter GitHub username:</label>
+			<input type="text" id="username">
+			<div>
+			<button class="btn btn1" onclick="getFollowers()">Get Your Twin</button>
+		</div>
+	</div>
+            </div>
+        </section>
+    </main>
+		  
+	<div class="container1" style="display:none;">
+		<div class="column">
+			<div>My GitHub Account</div>
+			<img id="myAvatar">
+			<div id="myUsername"></div>
+		</div>
+		<!-- <h1 class="contmid">=</h1> -->
+		<div class="column">
+			<div>Github Twin</div>
+			<img id="followerAvatar">
+			<div id="followerUsername"></div>
+		</div>
+	</div>
+	
 
-<!-- <img src="linkedin.svg"> -->
-</center>
-<br>
-<center>
-	<h2><u>Language Known</u>	</h2>
-	<br>
-	<img height="80" width="60" src="{% static 'images/c++.png' %}">
-	<img height="80" width="60" src="{% static 'images/j++.jpeg' %}">
-	<img height="80" width="60" src="{% static 'images/python.png' %}">
-	<img height="80" width="60" src="{% static 'images/django.png' %}">
-	<img height="80" width="60" src="{% static 'images/linux.png' %}">
-</center>
-<hr style="color: blue;" >
+	<!-- Footer -->
+	
 
-
+	
+	
 </body>
 </html>
